@@ -1,6 +1,6 @@
 #include "Zombie.hpp"
 
-Zombie::Zombie(std::string const& Name) : name(Name) {}
+Zombie::Zombie() : name("") {}
 
 Zombie::~Zombie(){
 	std::cout << name << " got destroyed by an unknown force" << std::endl;
@@ -13,4 +13,3 @@ void Zombie::announce(void){
 void Zombie::setZombieName(std::string const& Name){
 	name = Name;
 }
-	

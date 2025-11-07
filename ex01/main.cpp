@@ -3,6 +3,8 @@
 int main(){
 
 	Zombie* LeJ = zombieHorde(3, "Le J");
-	LeJ->announce();
-	delete LeJ;
+	for (int i = 0; i < 3; i++)
+		LeJ[i].announce();
+
+	delete[] LeJ;
 }
